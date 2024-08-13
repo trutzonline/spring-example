@@ -13,7 +13,7 @@
 	<artifactId>spring-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-example</name>
-	<description>Demo project for Spring Boot</description>
+	<description>An example enterprise application using Spring Boot, Vaadin and MongoDB.</description>
 	<url />
 
 	<licenses>
