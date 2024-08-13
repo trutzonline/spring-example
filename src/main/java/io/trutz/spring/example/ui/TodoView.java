@@ -1,5 +1,7 @@
 package io.trutz.spring.example.ui;
 
+import org.springframework.data.domain.PageRequest;
+
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -21,9 +23,8 @@ class TodoView extends VerticalLayout {
         Grid<Todo> allTodos = new Grid<>(Todo.class);
         BackEndDataProvider<Todo, Void> dataProvider = DataProvider.fromCallbacks(
                 query -> {
-                    query.getLimit();
-                    query.getOffset();
-                    return todoRepository.findAll().stream();
+                    var page = PageRequest.of(query.getPage(), query.getPageSize());
+                    return todoRepository.findAll(page).stream();
                 },
                 query -> (int) todoRepository.count());
         allTodos.setDataProvider(dataProvider);
