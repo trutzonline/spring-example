@@ -12,7 +12,7 @@ import io.trutz.spring.example.model.Todo;
 import io.trutz.spring.example.model.TodoRepository;
 
 @Route
-public class TodoView extends VerticalLayout {
+class TodoView extends VerticalLayout {
 
     public TodoView(TodoRepository todoRepository) {
 

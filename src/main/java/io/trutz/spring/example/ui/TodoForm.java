@@ -6,7 +6,7 @@ import com.vaadin.flow.data.binder.Binder;
 
 import io.trutz.spring.example.model.Todo;
 
-public class TodoForm extends FormLayout {
+class TodoForm extends FormLayout {
 
     private final Binder<Todo> binder;
 
