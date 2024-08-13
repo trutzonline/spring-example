@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringExampleApplication<spring-example>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.trutz.spring.example.SpringExampleApplication",
+            "projectName": "spring-example",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
